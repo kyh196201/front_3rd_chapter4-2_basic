@@ -5,7 +5,8 @@ env:
 on:
   push:
     branches-ignore:
-      - vercel-deploy
+      - '**'        # 모든 브랜치
+      - '!main'     # main 브랜치 제외
 jobs:
   Deploy-Preview:
     runs-on: ubuntu-latest

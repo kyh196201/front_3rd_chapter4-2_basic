@@ -5,6 +5,7 @@ env:
 on:
   push:
     branches:
+      - main
       - vercel-deploy
 jobs:
   Deploy-Production:
