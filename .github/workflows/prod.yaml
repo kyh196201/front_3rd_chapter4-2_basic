@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - main
-      - vercel-deploy
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
