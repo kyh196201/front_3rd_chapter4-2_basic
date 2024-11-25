@@ -69,7 +69,36 @@ function displayProducts(products) {
 loadProducts();
 
 // Simulate heavy operation. It could be a complex price calculation.
-for (let i = 0; i < 10000000; i++) {
-    const temp = Math.sqrt(i) * Math.sqrt(i);
-}
+// for (let i = 0; i < 10000000; i++) {
+//     const temp = Math.sqrt(i) * Math.sqrt(i);
+// }
 
+
+(function() {
+    function doHeavyOperation(startIndex, endIndex) {
+        for (let i = startIndex; i < endIndex; i++) {
+            const temp = Math.sqrt(i) * Math.sqrt(i);
+        }
+    }
+
+    const TOTAL = 10000000;
+    const CHUNK_SIZE = 100000;
+    let currentIndex = 0;
+
+    function processNextChunk() {
+        const end = Math.min(currentIndex + CHUNK_SIZE, TOTAL);
+        doHeavyOperation(currentIndex, end);
+        currentIndex = end;
+
+        const progress = (currentIndex / TOTAL * 100).toFixed(1);
+        console.log(`Progress: ${progress}%`);
+
+        if (currentIndex < TOTAL) {
+            setTimeout(processNextChunk, 0);
+        } else {
+            console.log('Calculation completed!');
+        }
+    }
+
+    processNextChunk();
+})();
