@@ -77,7 +77,8 @@
                         <li><a href="about.html">About us</a></li>
                         <li><a href="index.html#best-sellers-section">Best Sellers</a></li>
                         <li><a href="index.html#newsletter-section">Newsletter</a></li>
-                        <li class="menu-icon"><img src="images/menu_icon.png" ></li>
+                        <!-- 항상 24px로 렌더링하기 때문에 width로 24를 설정 -->
+                        <li class="menu-icon"><img src="images/menu_icon.png" width="24"></li>
                     </ul>
                 </nav>
             </div>
@@ -85,9 +86,12 @@
         
         <section class="hero">
             <picture>
-                <source media="(max-width: 575px)" srcset="images/Hero_Mobile.webp">
-                <source media="(min-width: 576px) and (max-width: 960px)" srcset="images/Hero_Tablet.webp">
-                <img src="images/Hero_Desktop.webp">
+                <!-- 575 x 575 -->
+                <source width="575" height="575" media="(max-width: 575px)" srcset="images/Hero_Mobile.webp">
+                <!-- 1440 x 1155 → 960 x 770 -->
+                <source width="960" height="770" media="(min-width: 576px) and (max-width: 960px)" srcset="images/Hero_Tablet.webp">
+                <!-- 2160 x 1005 -->
+                <img width="2160" height="1005" src="images/Hero_Desktop.webp">
             </picture>
 
            
@@ -114,7 +118,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr1.webp" alt="product: Penom Case">
+                            <img src="images/vr1.webp" alt="product: Penom Case" width="700" height="700">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Apple</h5>
@@ -128,7 +132,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone">
+                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone" width="700" height="700">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, PS</h5>
@@ -142,7 +146,7 @@
 
                     <div class="product">
                         <div class="product-picture">
-                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6">
+                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6" width="700" height="700">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Oculus</h5>
