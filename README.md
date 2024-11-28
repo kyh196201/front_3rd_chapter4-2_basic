@@ -417,8 +417,9 @@ img {
 
 #### 5-2 제목(Heading) 태그 올바른 순서로 변경
 
-- 제목 태그가 역순(h5 -> h4 -> h3)으로 작성되어 있었습니다.
-- [제목 태그는 1씩 오름차순으로 증가하도록 작성하는 것이 권장됩니다.](https://dequeuniversity.com/rules/axe/4.7/heading-order)
+- 원인
+	- 제목 태그가 역순(h5 -> h4 -> h3)으로 작성되어 있었습니다.
+	- [제목 태그는 1씩 오름차순으로 증가하도록 작성하는 것이 권장됩니다.](https://dequeuniversity.com/rules/axe/4.7/heading-order)
 
 - 개선 방법
 	- 불필요한 제목 태그를 제거하고 다른 태그로 변경했습니다.
@@ -439,8 +440,6 @@ img {
 ```
 
 </details>
-
-<br>
 
 <details>
 	<summary>개선 코드</summary>
