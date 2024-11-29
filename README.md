@@ -513,25 +513,4 @@ img {
 ### 9. 아쉬운 점
 
 - 개선 전/후 지표 정확히 확보하지 못한 것이 아쉽습니다.
-- PageSpeed 사이트를 분석할 때 마다 URL이 생성됩니다. 생성된 URL을 이용해 히스토리를 관리하지 못한 것이 아쉽습니다.
-
-### 10. 참고 링크
-
-- https://velog.io/@sehyunny/the-definitive-guide-to-image-optimization#중요-이미지는-fetchpriority로-빠르게-로드하기
-- https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture
-- https://web.dev/learn/design/responsive-images?hl=ko
-- https://web.dev/patterns/web-vitals-patterns/images/responsive-images?hl=ko
-- https://web.dev/articles/preload-responsive-images?hl=ko#responsive
-- https://www.freeprivacypolicy.com/free-cookie-consent/
-- https://www.daleseo.com/js-script-defer-async/
-- https://ko.javascript.info/script-async-defer
-- https://fonts.google.com/knowledge/using_type/self_hosting_web_fonts
-- https://css-tricks.com/the-best-font-loading-strategies-and-how-to-execute-them/#loading-fonts-with-self-hosted-fonts
-- https://web.dev/articles/codelab-preload-web-fonts
-- https://ko.javascript.info/event-loop
-- https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%EB%8F%99%EA%B8%B0%EB%B9%84%EB%8F%99%EA%B8%B0-%EB%B8%94%EB%A1%9C%ED%82%B9%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC
-- https://web.dev/articles/optimize-cls?utm_source=lighthouse&utm_medium=lr&hl=ko#images-without-dimensions
-- https://inpa.tistory.com/entry/CSS-%F0%9F%93%9A-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B9%84%EC%9C%A8-%EA%B3%A0%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-aspect-ratio
-- https://www.freecodecamp.org/news/what-is-alt-text-image-alt-text-html-example/
-- https://css-tricks.com/the-complete-guide-to-lazy-loading-images/
-- https://web.dev/articles/browser-level-image-lazy-loading
+- PageSpeed 사이트를 분석할 때 마다 URL이 생성됩니다. 생성된 URL을 이용해 히스토리를 관리하지 못한 것이 아쉽습니다
